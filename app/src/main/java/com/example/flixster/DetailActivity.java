@@ -18,7 +18,6 @@ import com.google.android.youtube.player.YouTubePlayerView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.parceler.Parcels;
-
 import okhttp3.Headers;
 
 public class DetailActivity extends YouTubeBaseActivity {
@@ -42,7 +41,8 @@ public class DetailActivity extends YouTubeBaseActivity {
         youTubePlayerView = findViewById(R.id.player);
 
        Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
-       tvTitle2.setText(movie.getTitle());
+        assert movie != null;
+        tvTitle2.setText(movie.getTitle());
        tvOverview2.setText(movie.getOverview());
        ratingBar.setRating((float)movie.getRating());
 
@@ -79,6 +79,7 @@ public class DetailActivity extends YouTubeBaseActivity {
             Log.d("DetailActivity", "onInitializationSuccess");
             // do any work here to cue video, play video, etc.
             youTubePlayer.cueVideo(youtubeKey);
+
         }
 
         @Override

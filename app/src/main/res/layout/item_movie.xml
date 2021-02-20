@@ -18,10 +18,13 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:transitionName="transPic"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvTitle"
+        android:transitionName="transTitle"
         android:layout_width="258dp"
         android:layout_height="44dp"
         android:layout_alignParentTop="true"
@@ -46,13 +49,13 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="6dp"
         android:layout_toEndOf="@+id/ivPoster"
         android:fontFamily="sans-serif-light"
         android:textAlignment="viewStart"
         android:textColor="#70BC19"
-        android:textSize="10sp"
-        android:textStyle="bold"
+        android:textSize="16sp"
+        android:transitionName="transOverview"
         tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah" />
 
 </RelativeLayout>

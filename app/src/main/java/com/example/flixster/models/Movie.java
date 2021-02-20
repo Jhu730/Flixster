@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @Parcel
-public class Movie {
+public class Movie<rating> {
 
     String posterPath;
     String title;

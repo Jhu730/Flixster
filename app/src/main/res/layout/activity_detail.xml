@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#777676"
+
     android:orientation="vertical"
+    android:background="#E1000000"
+    android:backgroundTint="#101010"
     tools:context=".DetailActivity">
-
-    <com.google.android.youtube.player.YouTubePlayerView
-        android:id="@+id/player"
-        android:layout_width="match_parent"
-        android:layout_height="250dp" />
-
 
     <TextView
         android:id="@+id/tvTitle2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#616160"
         android:text="TextView"
-        android:textSize="30sp"
+        android:textColor="#7AD610"
+        android:textSize="20sp"
+        android:transitionName="transTitle"
+        android:background="#E1000000"
+        android:backgroundTint="#101010"
         tools:text=" Wonder Woman 1984" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:transitionName="transPic"
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -34,6 +40,14 @@
 
     <TextView
         android:id="@+id/tvOverview2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="viewStart"
+        android:textColor="#70BC19"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:transitionName="transOverview"
+        tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah" />
+
 </LinearLayout>
