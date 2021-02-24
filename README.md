@@ -23,7 +23,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ### App Walkthough GIF
 
 
-<img src="https://github.com/Jhu730/Flixster/blob/master/demo2.gif" width=250><br>
+<img src="https://github.com/Jhu730/Flixster/blob/master/demo2%20fixed.gif" width=250><br>
 
 ### Notes
 
@@ -34,7 +34,7 @@ Finding the place to write the code for the extra stories.
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
-
+-Gif by Licecap
 ---
 
 ## Flix Part 1
@@ -64,3 +64,4 @@ Following the Video was straight forward, but when doing the bonus like adding f
 
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
+-Gif by Licecap
